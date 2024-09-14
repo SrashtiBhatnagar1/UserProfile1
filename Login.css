@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #e0f7fa; /* Light teal background for a fresh look */
+}
+
+.profile-container {
+max-width: 600px;
+margin: 20px auto;
+background: #ffffff; /* White background for profile card */
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for elevation */
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+border: 2px solid #00796b; /* Teal border for a stylish frame */
+}
+
+.avatar {
+margin-bottom: 15px;
+}
+
+.avatar img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #00796b; /* Teal border around the avatar */
+}
+
+.profile-info {
+text-align: center;
+}
+
+.name {
+font-size: 28px;
+color: #004d40; /* Darker teal for the name */
+margin: 0;
+font-weight: bold;
+}
+
+.bio {
+font-size: 16px;
+color: #555555; /* Dark grey for bio text */
+margin: 10px 0;
+line-height: 1.5;
+}
+
+.contact-info p {
+font-size: 14px;
+color: #00796b; /* Teal color for contact information */
+margin: 5px 0;
+}
+
+.links {
+margin-top: 20px;
+}
+
+.links a {
+text-decoration: none;
+color: #004d40; /* Dark teal for links */
+margin: 0 12px;
+font-size: 16px;
+padding: 8px 12px;
+border-radius: 5px;
+background: #b2dfdb; /* Light teal background for links */
+transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+background-color: #004d40; /* Darker teal background on hover */
+color: #ffffff; /* White text color on hover */
+text-decoration: none;
+}
+
+@media (min-width: 768px) {
+.profile-container {
+flex-direction: row;
+align-items: flex-start;
+}
+
+.avatar {
+margin-right: 20px;
+}
+
+.avatar img {
+width: 150px;
+height: 150px;
+}
+
+.profile-info {
+text-align: left;
+}
+}
